@@ -1,0 +1,131 @@
+<div ng-controller="projectController">  
+  <div class="col-md-12 main">          
+    <div class="row page-header">
+      <div class="col-md-2">
+        <h1>Proyectos</h1>
+      </div><!-- /.col-md-2 -->
+      <div class="col-md-4 col-md-offset-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Buscar...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </span>
+        </div>
+      </div><!-- /.col-md-3 -->
+    </div><!-- /.row page-header-->
+  </div>  
+  <uib-tabset active="active">
+    <uib-tab heading="Recientes">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Proyecto</th>
+              <th>Cliente</th>
+              <th>Desarrollador</th>
+              <th>Estado</th>
+              <th>Requerimientos</th>
+              <th>Fecha Lanzamiento</th>
+              <th>Alquiler finaliza</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="project in projects">
+              <td>{{project.Name}}</td>
+              <td>{{project.Client}}</td>
+              <td>{{project.Developer}}</td>
+              <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{project.State}}</td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{project.Requirements}}</td>
+              <td>{{project.Launch_Date}}</td>
+              <td>{{project.End_Date}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+    <uib-tab heading="En Progreso">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Proyecto</th>
+              <th>Cliente</th>
+              <th>Desarrollador</th>
+              <th>Estado</th>
+              <th>Requerimientos</th>
+              <th>Fecha Lanzamiento</th>
+              <th>Alquiler finaliza</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="project in projects | filter: {State: 'In Progress'}">
+              <td>{{project.Name}}</td>
+              <td>{{project.Client}}</td>
+              <td>{{project.Developer}}</td>
+              <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{project.State}}</td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{project.Requirements}}</td>
+              <td>{{project.Launch_date}}</td>
+              <td>{{project.End_date}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+    <uib-tab heading="Live!">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Proyecto</th>
+              <th>Cliente</th>
+              <th>Desarrollador</th>
+              <th>Estado</th>
+              <th>Requerimientos</th>
+              <th>Fecha Lanzamiento</th>
+              <th>Alquiler finaliza</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="project in projects | filter: {State: 'Live!'}">
+              <td>{{project.Name}}</td>
+              <td>{{project.Client}}</td>
+              <td>{{project.Developer}}</td>
+              <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{project.State}}</td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{project.Requirements}}</td>
+              <td>{{project.Launch_date}}</td>
+              <td>{{project.End_date}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+    <uib-tab heading="Finalizados">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Proyecto</th>
+              <th>Cliente</th>
+              <th>Desarrollador</th>
+              <th>Estado</th>
+              <th>Requerimientos</th>
+              <th>Fecha Lanzamiento</th>
+              <th>Alquiler finaliza</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="project in projects | filter: {State: 'Finished'}">
+              <td>{{project.Name}}</td>
+              <td>{{project.Client}}</td>
+              <td>{{project.Developer}}</td>
+              <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{project.State}}</td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{project.Requirements}}</td>
+              <td>{{project.Launch_date}}</td>
+              <td>{{project.End_date}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+  </uib-tabset>
+</div>

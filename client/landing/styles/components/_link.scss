@@ -1,0 +1,21 @@
+.link {
+
+}
+
+.link--nav {
+	display: block;
+	text-align: center;
+	font-family: $defaultFont;
+	font-size: $buttonTextSize;
+	color: #ffffff;
+	padding: $gridSpacing $gridSpacing*2;
+	border-radius: $borderRadius;
+	background: none;
+	border: none;
+	cursor: pointer;
+	@extend .effect__t-b;
+}
+
+.link--nav:hover {
+	color: $activeNormal;
+}

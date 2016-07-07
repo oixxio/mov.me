@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Developers Landing</title>
+	<link rel="stylesheet" href="../css temp/styles-landing.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body class="body" ng-app="hardcoded" ng-controller="landingCtrl">
+	<div class="top-bar__container">
+		<!-- DESKTOP TOP BAR -->
+		<ul class="top-bar top-bar--normal">
+			<li class="top-bar__element top-bar__element--logo layout__float-l">
+				<img src="../img/logo-horizontal-clear.svg" alt="Moviliza.me logo">
+			</li>
+			<li class="top-bar__element layout__float-l">
+				<a class="link link--nav">Contacto</a>
+			</li>
+			<li class="top-bar__element layout__float-l">
+				<a class="link link--nav">Help Center</a>
+			</li>
+			<li class="top-bar__element layout__float-l">
+				<a class="link link--nav">Para desarrolladores</a>
+			</li>
+			<li class="top-bar__element layout__float-r">
+				<a class="button button--secondary-white">Iniciar sesión</a>
+			</li>
+			<li class="top-bar__element layout__float-r">
+				<button class="search__button-top" type="submit">
+					<i class="fa fa-search"></i>
+				</button>
+				<input class="search search--top" name="search" type="search">
+			</li>
+		</ul>
+		<!-- MOBILE TOP BAR -->
+		<ul class="top-bar top-bar--mobile">
+			<li class="top-bar__element top-bar__element">
+				<i class="button fa fa-bars" ng-click="showMenu = ! showMenu"></i>
+			</li>
+			<li class="top-bar__element top-bar__element--logo">
+				<img src="../img/logo-horizontal-clear.svg" alt="Moviliza.me logo">
+			</li>
+			<li class="top-bar__element top-bar__element">
+				<i class="button fa fa-user"></i>
+			</li>
+		</ul>
+	</div>
+	<!-- LOGIN MENU -->
+<!-- 	<div class="login__overlay">
+		<div class="login">
+			<div class="login__top">
+				<span>Login</span>
+				<i class="fa fa-close"></i>
+			</div>
+			<button class="button button--log-facebook">
+				<i class="fa fa-facebook"></i>
+				<span>Continuar con Facebook</span>
+			</button>
+			<form class="login__form" action="">
+				<label class="login__label"for="input-mail">E-mail</label>
+				<input class="input" type="text" name="user-email" id="input-email">
+				<label class="login__label"for="input-mail">Contraseña</label>
+				<input class="input" type="text" name="user-password" id="input-password">
+				<div class="login__pass-recover">¿Olvidaste tu contraseña?</div>
+				<button type="submit" class="button button--main">
+					Iniciar sesión
+				</button>
+			</form>
+			<div class="login__bottom">
+				<button class="button button--secondary-active layout__float-r">
+					Crea una cuenta
+				</button>
+				<a class="buttom">Ingresa como desarrollador</a>
+			</div>
+		</div>
+	</div> -->
+	<!-- SIDE NAVIGATION MENU -->
+	<ul class="nav-menu effect__animate-hide" ng-show="showMenu">
+		<ul>
+			<li class="top-bar__element">
+				<i class="button button--white fa fa-arrow-left" ng-click="showMenu = ! showMenu"></i>
+			</li>
+			<li class="top-bar__element top-bar__element--logo">
+				<img src="../img/logo-horizontal-clear.svg" alt="Moviliza.me logo">
+			</li>
+		</ul>
+		<li>
+			<a class="nav-menu__link">¿Cómo funciona?</a>
+		</li>
+		<li>
+			<a class="nav-menu__link">Para desarroladores</a>
+		</li>
+		<li>
+			<a class="nav-menu__link">Help Center</a>
+		</li>
+	</ul>
+	<!-- FIRST PRESENTATION SECTION -->
+	<section class="section section--presentation">
+		<div class="app-details__overlay">
+			<img src="../img/presentation-1-b.png" alt="">
+			<div class="app-details__title">Earthcore: Shattered Elements</div>
+		</div>
+		<div class="app-details__presentation">
+		</div>
+	</section>
+
+	<section class="section section--app-details">
+		<div class="app-details__description">
+			<div class="app-details__description-text">
+				<div class="app__details__author">por <span>Joel Lovera</span></div>
+				<div class="app__details__ranking">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<div class="app__details__long-description">
+					With aCalendar+ you get a dozen of extra features including more views, advanced settings, Tasks, more color themes and public holidays.
+					Also you'll find business-oriented features like invitations, free/busy settings and sharing as text or file.
+				</div>
+				<div class="app__details__download">
+					<button class="button button--secondary-active">Descargar demo</button>
+				</div>
+			</div>
+			<div class="app-details__description-buy">
+				<div class="card__app-commerce">
+					<div class="card__app-commerce-details">
+						<span>Tenela en</span>
+						<span>10</span>
+						<span>días</span>
+					</div>
+					<div class="card__app-commerce-details">
+						<span>Desde</span>
+						<span>$374.45</span>
+						<span>por mes</span>
+					</div>
+				</div>
+				<div class="app-details__description-buy-action">
+					<button class="button button--main-active">Alquilar</button>
+				</div>
+			</div>
+		</div>
+	<section class="section">
+
+	<section class="section section--screenshots">
+		<div class="screenshots__wrapper">
+            <div class="screenshot__element">
+                <img src="../img/app-screenshot.png" alt="">
+            </div>
+            <div class="screenshot__element">
+                <img src="../img/app-screenshot.png" alt="">
+            </div>
+            <div class="screenshot__element">
+                <img src="../img/app-screenshot.png" alt="">
+            </div>
+            <div class="screenshot__element">
+                <img src="../img/app-screenshot.png" alt="">
+            </div>
+            <div class="screenshot__element">
+                <img src="../img/app-screenshot.png" alt="">
+            </div>
+            <div class="screenshot__element">
+                <img src="../img/app-screenshot.png" alt="">
+            </div>
+            <div class="screenshot__element">
+                <img src="../img/app-screenshot.png" alt="">
+            </div>
+		</div>
+	</section>
+
+	<section class="section section--comments">
+		<div class="section__title">
+			Comentarios
+		</div>
+		<div class="section__sub-title">
+			Aún no hay comentarios para esta aplicación
+		</div>
+		<div class="section__action">
+			<button class="button button--secondary-active">Dejanos tu opinión</button>
+		</div>
+	</section>
+
+	<section class="section section--business-advantages">
+		<div class="section__title">
+			Funcionalidades pensadas para tu negocio
+		</div>
+		<div class="card__row-basic">
+			<div class="card__presentation-basic">
+				<img class="normal" src="../img/app-detail-01.png" alt="">
+				<div class="card__basic-text">
+					<div>Notificaciones</div>
+					<div>La app provee una muy útil base de datos de quienes son sus clientes</div>
+				</div>
+			</div>
+			<div class="card__presentation-basic">
+				<img class="normal" src="../img/app-detail-02.png" alt="">
+				<div class="card__basic-text">
+					<div>Base de datos</div>
+					<div>Notificá a tus clientes de ofertas</div>
+				</div>
+			</div>
+			<div class="card__presentation-basic">
+				<img class="normal" src="../img/app-detail-03.png" alt="">
+				<div class="card__basic-text">
+					<div>Encuestas</div>
+					<div>Conocé lo que tus clientes necesitan y están dispuestos a pagar</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	</section>
+		<div class="blured__container">
+			<div class="section__title">
+				¡Puedes personalizar estas opciones y 6 más!
+			</div>
+			<div class="blured">
+				<div class="card__scrollable-row-wrapper">
+				    <ul class="card__scrollable-list">
+				    	<li class="card__scrollable-card">
+				    		<div class="card__scrollable-img-wrapper">
+				    			<img src="../img/app-example.png" alt="">
+				    		</div>
+				    		<div class="card__scrollable-card-title">Un título de la característia que es genial</div>
+				    		<div class="card__scrollable-card-sub">Una descripción super loca y dinámica con validación de largo máximo. Sirve para dar algunos detalles extras sobre la feature.</div>
+				    	</li>
+				    	<li class="card__scrollable-card">
+				    		<div class="card__scrollable-img-wrapper">
+				    			<img src="../img/app-example.png" alt="">
+				    		</div>
+				    		<div class="card__scrollable-card-title">Un título de la característia que es genial</div>
+				    		<div class="card__scrollable-card-sub">Una descripción super loca y dinámica con validación de largo máximo. Sirve para dar algunos detalles extras sobre la feature.</div>
+				    	</li>
+				    	<li class="card__scrollable-card">
+				    		<div class="card__scrollable-img-wrapper">
+				    			<img src="../img/app-example.png" alt="">
+				    		</div>
+				    		<div class="card__scrollable-card-title">Un título de la característia que es genial</div>
+				    		<div class="card__scrollable-card-sub">Una descripción super loca y dinámica con validación de largo máximo. Sirve para dar algunos detalles extras sobre la feature.</div>
+				    	</li>
+				    	<li class="card__scrollable-card">
+				    		<div class="card__scrollable-img-wrapper">
+				    			<img src="../img/app-example.png" alt="">
+				    		</div>
+				    		<div class="card__scrollable-card-title">Un título de la característia que es genial</div>
+				    		<div class="card__scrollable-card-sub">Una descripción super loca y dinámica con validación de largo máximo. Sirve para dar algunos detalles extras sobre la feature.</div>
+				    	</li>
+				    </ul>
+				</div>
+				<div class="section__action">
+			<button class="button button--secondary-active">Dejanos tu opinión</button>
+		</div>
+			</div>
+		</div>
+		<div class="blured__image-wrapper">
+			<img src="../img/app-example-blured.png" alt="">
+		</div>
+
+	</section>
+
+	<section class="section">
+		<div class="section__title">
+			Planes adaptados a su necesidad
+		</div>
+		<ul class="rent__plan-elements-list">
+
+			<li class="rent__plan-element">
+				<div class="rent__plan-name">
+					Plan
+					<span>Rápido</span>
+				</div>
+				<button class="button button--main-active">Contratar</button>
+				<ul class="rent__plan-list-details">
+					<li class="rent__plan-detail">Tu app en <span>7 días</span> desde la entrega de los requerimientos</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+				</ul>
+				<div class="rent__plan-price">
+					Solo <span>$321</span> por mes.
+				</div>
+				<button class="button button--secondary-positive">Contratar</button>
+			</li>
+
+			<li class="rent__plan-element">
+				<div class="rent__plan-name">
+					Plan
+					<span>Rápido</span>
+				</div>
+				<div>
+					<button class="button button--main-active">Contratar</button>
+				</div>
+				<ul class="rent__plan-list-details">
+					<li class="rent__plan-detail">Tu app en <span>7 días</span> desde la entrega de los requerimientos</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+				</ul>
+				<div class="rent__plan-price">
+					Solo <span>$321</span> por mes.
+				</div>
+				<div>
+					<button class="button button--secondary-positive">Contratar</button>
+				</div>
+			</li>
+
+			<li class="rent__plan-element">
+				<div class="rent__plan-name">
+					Plan
+					<span>Rápido</span>
+				</div>
+				<div>
+					<button class="button button--main-active">Contratar</button>
+				</div>
+				<ul class="rent__plan-list-details">
+					<li class="rent__plan-detail">Tu app en <span>7 días</span> desde la entrega de los requerimientos</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+					<li class="rent__plan-detail"><span>Su marca en la pantalla de inicio</span>Elija que imagen quiere que sus clientes vean al iniciar la aplicación</li>
+				</ul>
+				<div class="rent__plan-price">
+					Solo <span>$321</span> por mes.
+				</div>
+				<div>
+					<button class="button button--secondary-positive">Contratar</button>
+				</div>
+			</li>
+
+		</ul>
+	</section>
+
+	<section class="section section--app-suggestion">
+		<div class="card__app--title-bar">
+			<div class="card__app--title">¿No encontraste lo que buscabas?</div>
+			<div class="card__app--title-bar-action">
+				<button class="button button--main-small">Más sugerencias</button>
+			</div>
+		</div>
+		<ul class="list__horizontal">
+			<li class="list list__horizontal-item list--tripe">
+				<div class="card__app-wrapper">
+					<div class="card__app-img-container">
+						<img src="">
+					</div>
+					<div class="card__app-info">
+						<div class="card__app-name">
+							Super extra calendar 2016
+						</div>
+						<div class="card__app-rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="card__app--description">
+							This is and app for those that love apps about calendar and have a company.
+						</div>
+						<div class="card__app-commerce">
+							<div class="card__app-commerce-details">
+								<span>Tenela en</span>
+								<span>10</span>
+								<span>días</span>
+							</div>
+							<div class="card__app-commerce-details">
+								<span>Desde</span>
+								<span>$374.45</span>
+								<span>por mes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="list list__horizontal-item list--tripe">
+				<div class="card__app-wrapper">
+					<div class="card__app-img-container">
+						<img src="">
+					</div>
+					<div class="card__app-info">
+						<div class="card__app-name">
+							Super extra calendar 2016
+						</div>
+						<div class="card__app-rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="card__app--description">
+							This is and app for those that love apps about calendar and have a company.
+						</div>
+						<div class="card__app-commerce">
+							<div class="card__app-commerce-details">
+								<span>Tenela en</span>
+								<span>10</span>
+								<span>días</span>
+							</div>
+							<div class="card__app-commerce-details">
+								<span>Desde</span>
+								<span>$374.45</span>
+								<span>por mes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="list list__horizontal-item list--tripe">
+				<div class="card__app-wrapper">
+					<div class="card__app-img-container">
+						<img src="">
+					</div>
+					<div class="card__app-info">
+						<div class="card__app-name">
+							Super extra calendar 2016
+						</div>
+						<div class="card__app-rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="card__app--description">
+							This is and app for those that love apps about calendar and have a company.
+						</div>
+						<div class="card__app-commerce">
+							<div class="card__app-commerce-details">
+								<span>Tenela en</span>
+								<span>10</span>
+								<span>días</span>
+							</div>
+							<div class="card__app-commerce-details">
+								<span>Desde</span>
+								<span>$374.45</span>
+								<span>por mes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+
+		</ul>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__nav">
+				<ul class="footer__nav-list">
+					<li>¿Cómo funciona?</li>
+					<li>Aplicaciones</li>
+					<li>Juegos</li>
+					<li>Help Center</li>
+					<li>Sugerir una aplicación</li>
+					<li>Trabaja con nosotros</li>
+					<li>Legales</li>
+					<li>Contacto</li>
+				</ul>
+			</div>
+			<div class="footer__login">
+				<button class="button button--secondary-white">Soy desarrollador</button>
+				<button class="button button--secondary-white">Ingresar</button>
+			</div>
+			<div class="footer__social">
+				<span>Encuentranos en:</span>
+				<ul class="footer__social-list">
+					<li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+					<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+				</ul>
+			</div>
+			<div class="footer__legal">
+				<div class="footer__int">
+					<i class="fa fa-language"></i>
+					<i class="fa fa-dollar"></i>
+					<span>Español - Argentina</span>
+					<div class="footer__local">
+						Córdoba, Argentina
+						Av. Savatini 1600
+						(0351) 153 171122
+					</div>
+				</div>
+				<div class="footer__afip">
+					<img src="../img/afip.png">
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<script src="../../node_modules/angular/angular.min.js"></script>
+	<script src="../scripts/app.js"></script>
+	<script src="../scripts/js temp/jquery-2.2.3.min.js"></script>
+	<script>
+		$('.scrollleft').click(function () {
+		    console.log('ok')
+		    $('#scrollbar').animate({
+		        scrollLeft: '-=153'
+		    }, 1000, 'easeOutQuad');
+		});
+		$('.scrollright').click(function () {
+		    console.log('ok')
+		    $('#scrollbar').animate({
+		        scrollLeft: '+=153'
+		    }, 1000, 'easeOutQuad');
+		});
+		// var parent = document.getElementById('container1');
+		// var child = document.getElementById('container2');
+		// child.style.paddingRight = child.offsetWidth - child.clientWidth + "px";
+	</script>
+
+
+	
+</body>
+</html>

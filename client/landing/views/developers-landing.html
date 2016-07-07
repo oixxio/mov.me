@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Developers Landing</title>
+	<link rel="stylesheet" href="../css temp/styles-landing.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body class="body" ng-app="hardcoded" ng-controller="landingCtrl">
+	<div class="top-bar__container">
+		<!-- DESKTOP TOP BAR -->
+		<ul class="top-bar top-bar--normal">
+			<li class="top-bar__element top-bar__element--logo layout__float-l">
+				<img src="../img/logo-horizontal-clear.svg" alt="Moviliza.me logo">
+			</li>
+			<li class="top-bar__element layout__float-l">
+				<a class="link link--nav">Contacto</a>
+			</li>
+			<li class="top-bar__element layout__float-l">
+				<a class="link link--nav">Help Center</a>
+			</li>
+			<li class="top-bar__element layout__float-r">
+				<a class="button button--secondary-white">Iniciar sesión</a>
+			</li>
+			<li class="top-bar__element layout__float-r">
+				<a class="button button--main-active">Postula una aplicación</a>
+			</li>
+		</ul>
+		<!-- MOBILE TOP BAR -->
+		<ul class="top-bar top-bar--mobile">
+			<li class="top-bar__element top-bar__element">
+				<i class="button fa fa-bars" ng-click="showMenu = ! showMenu"></i>
+			</li>
+			<li class="top-bar__element top-bar__element--logo">
+				<img src="../img/logo-horizontal-clear.svg" alt="Moviliza.me logo">
+			</li>
+			<li class="top-bar__element top-bar__element">
+				<i class="button fa fa-user"></i>
+			</li>
+		</ul>
+	</div>
+	<!-- LOGIN MENU -->
+<!-- 	<div class="login__overlay">
+		<div class="login">
+			<div class="login__top">
+				<span>Login</span>
+				<i class="fa fa-close"></i>
+			</div>
+			<button class="button button--log-facebook">
+				<i class="fa fa-facebook"></i>
+				<span>Continuar con Facebook</span>
+			</button>
+			<form class="login__form" action="">
+				<label class="login__label"for="input-mail">E-mail</label>
+				<input class="input" type="text" name="user-email" id="input-email">
+				<label class="login__label"for="input-mail">Contraseña</label>
+				<input class="input" type="text" name="user-password" id="input-password">
+				<div class="login__pass-recover">¿Olvidaste tu contraseña?</div>
+				<button type="submit" class="button button--main">
+					Iniciar sesión
+				</button>
+			</form>
+			<div class="login__bottom">
+				<button class="button button--secondary-active layout__float-r">
+					Crea una cuenta
+				</button>
+				<a class="buttom">Ingresa como desarrollador</a>
+			</div>
+		</div>
+	</div> -->
+	<!-- SIDE NAVIGATION MENU -->
+	<ul class="nav-menu effect__animate-hide" ng-show="showMenu">
+		<ul>
+			<li class="top-bar__element">
+				<i class="button button--white fa fa-arrow-left" ng-click="showMenu = ! showMenu"></i>
+			</li>
+			<li class="top-bar__element top-bar__element--logo">
+				<img src="../img/logo-horizontal-clear.svg" alt="Moviliza.me logo">
+			</li>
+		</ul>
+		<li>
+			<a class="nav-menu__link">¿Cómo funciona?</a>
+		</li>
+		<li>
+			<a class="nav-menu__link">Para desarroladores</a>
+		</li>
+		<li>
+			<a class="nav-menu__link">Help Center</a>
+		</li>
+	</ul>
+	<!-- FIRST PRESENTATION SECTION -->
+	<section class="section section--presentation">
+		<div class="presentation presentation__developers">
+			<div class="presentation__text">
+				<div class="presentation__title">Estamos buscando las mejores apps y juegos móviles</div>
+				<div class="presentation__subtitle">La aplicación móvil o juego que su negocio o empresa necesitaa una fracción del costo y en tiempo record</div>
+				<div class="presentation__call-secondary">
+					<a class="button button--secondary-white">¿Cómo funciona?</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION, HOW IT WORKS -->
+	<section class="section">
+		<div class="section__title">
+			¿Cómo funciona?
+		</div>
+		<div class="card__alternated">
+			<ul class="card__alternated-list">
+				<li class="card__alternated-left">
+					<div class="card__alternated-side-a">
+						<img class="card__alternated-img" src="../img/how-dev_01.png">
+					</div>
+					<div class="card__alternated-side-b">
+						<div class="card__alternated-title">Primer paso</div>
+						<div class="card__alternated-description">Vos nos entregas una aplicación, la cual pueda ser personalizada a las necesidades del cliente. Nosotros la publicamos en nuestro store y la promocionamos de manera gratuita</div>
+					</div>
+				</li>
+				
+				<li class="card__alternated-right">
+					<div class="card__alternated-side-a">
+						<img class="card__alternated-img" src="../img/how-dev_02.png">
+					</div>
+					<div class="card__alternated-side-b">
+						<div class="card__alternated-title">Segundo paso</div>
+						<div class="card__alternated-description">Vos nos entregas una aplicación, la cual pueda ser personalizada a las necesidades del cliente. Nosotros la publicamos en nuestro store y la promocionamos de manera gratuita</div>
+					</div>
+				</li>
+
+				<li class="card__alternated-left">
+					<div class="card__alternated-side-a">
+						<img class="card__alternated-img" src="../img/how-dev_03.png">
+					</div>
+					<div class="card__alternated-side-b">
+						<div class="card__alternated-title">Tercer paso</div>
+						<div class="card__alternated-description">Vos nos entregas una aplicación, la cual pueda ser personalizada a las necesidades del cliente. Nosotros la publicamos en nuestro store y la promocionamos de manera gratuita</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="section__title">
+			¿Por qué? 
+		</div>
+		<div class="card__row-basic">
+			<ul class="card__row-list">
+				<li class="card__blue">
+					<img src="../img/why-dev_01.png">
+					<div>Una aplicación, muchos clientes</div>
+					<div>¿Por qué re inventar la rueda? Te proponemos que saques el mayor provecho de tu trabajo. Crea una app o reutiliza una existente en varios clientes.</div>
+				</li>
+				<li class="card__blue">
+					<img src="../img/why-dev_02.png">
+					<div>Nosotros manejamos el cliente</div>
+					<div>¿Cansado de los problemas con clientes dificiles? Nosotros manejamos todo y te damos lo que necesitas en bandeja de plata.</div>
+				</li>
+				<li class="card__blue">
+					<img src="../img/why-dev_03.png">
+					<div>Enorme exposición</div>
+					<div>Moviliza.me selecciona aplicaciones y es mucho más específico que otros app stores. No tienes que destacarte entre millones, aquí es más facil que vean tu trabajo.</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section__postulate-announce">
+		<div class="section__title-wrapper">
+			<div class="section__title">
+				Postula tu aplicación
+			</div>
+			<div class="section__sub-title">
+				Moviliza.me es una plataforma que actualmente acepta desarrolladores solo por invitación
+			</div>
+		</div>
+	</section>
+
+	<section class="section section__postulate">
+		<div class="postulate__title">
+			¡Envianos una aplicación para que podamos invitarte!
+		</div>
+		<div class="postulate__wrapper">
+			<div class="postulate__upload-frame">
+				<div>
+					<label class="input__label">URL a tu app</label>
+					<input class="input input__simple" type="text" placeholder="Pega aquí la url a la app"></input>
+				</div>
+				<div class="postulate__optional">o tambien puedes</div>
+				<div class="postulate__add-file">
+					<button class="button button--secondary-active">Agregar un archivo</button>
+				</div>
+				<div>
+					<label class="input__label">Breve description <span>(opcional)</span></label>
+					<textarea class="input input__simple input__text-area" rows="3" type="textarea" placeholder="Por ejemplo: esta aplicacione es muy estable, super simple de usar y tiene más de 20 opciones de personalización. Ademas estoy orgulloso de lo liviana que es."></textarea>
+				</div>
+			</div>
+			<div class="postulate__add-upload">
+				<button class="button button--secondary-active">Agregar otra aplicación o juego</button>
+				<div>Pudes agregar hasta 3</div>
+			</div>
+			<div class="postulate__email">
+				<div>
+					<label class="input__label">Tu e-mail</label>
+					<input class="input input__simple" type="text" placeholder="ejemplo@dominio.com"></input>
+				</div>
+			</div>
+			<div class="postulate__send">
+				<button class="button button--secondary-positive">enviar</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__nav">
+				<ul class="footer__nav-list">
+					<li>¿Cómo funciona?</li>
+					<li>Aplicaciones</li>
+					<li>Juegos</li>
+					<li>Help Center</li>
+					<li>Sugerir una aplicación</li>
+					<li>Trabaja con nosotros</li>
+					<li>Legales</li>
+					<li>Contacto</li>
+				</ul>
+			</div>
+			<div class="footer__login">
+				<button class="button button--secondary-white">Soy desarrollador</button>
+				<button class="button button--secondary-white">Ingresar</button>
+			</div>
+			<div class="footer__social">
+				<span>Encuentranos en:</span>
+				<ul class="footer__social-list">
+					<li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+					<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+				</ul>
+			</div>
+			<div class="footer__legal">
+				<div class="footer__int">
+					<i class="fa fa-language"></i>
+					<i class="fa fa-dollar"></i>
+					<span>Español - Argentina</span>
+					<div class="footer__local">
+						Córdoba, Argentina
+						Av. Savatini 1600
+						(0351) 153 171122
+					</div>
+				</div>
+				<div class="footer__afip">
+					<img src="../img/afip.png">
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<script src="../../node_modules/angular/angular.min.js"></script>
+	<script src="../scripts/app.js"></script>
+	
+</body>
+</html>

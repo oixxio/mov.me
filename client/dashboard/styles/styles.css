@@ -1,0 +1,54 @@
+/////////////////////head&side
+.nav-sidebar li {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.nav-sidebar li .glyphicon {
+	vertical-align: -1px;
+	margin-right: 15px;
+}
+/////////////////////head&side
+
+/////////////////////admins
+.page-header .input-group {
+	margin-top: 23px; 
+}
+/////////////////////admins
+
+/////////////////////adminDashboard
+.widget {
+  margin: 10px;
+}
+
+.widget a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.widget span {
+  font-size: 45px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.widget h5 {
+  margin-top: 15px;
+}
+
+.widget h2 {
+  margin: 0;
+}
+
+.widget h6 {
+  margin-top: 27px;
+}
+/////////////////////adminDashboard
+/////////////////////NewApp
+.single-plan {
+     border: 1px solid darkgray;
+     border-radius: 25px;
+     margin-top: 15px;
+     padding-top: 15px;
+     padding-bottom: 10px;"
+   }

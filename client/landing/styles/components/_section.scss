@@ -1,0 +1,132 @@
+.section {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+.section__title-wrapper {
+	display: inline-block;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section__title {
+	display: inline-block;
+	max-width: 1200px;
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+	font-size: 32px;
+	margin: $gridSpacing*6 0 $gridSpacing*2 0;
+}
+
+.section__sub-title {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 17px;
+}
+
+.section__action {
+	display: inline-block;
+	margin: $gridSpacing*2;
+	winth: 100%;
+}
+
+.section--how {
+	height: 650px;
+}
+
+.section--business-advantages {
+	height: 520px;
+}
+
+.section--app-suggestion {
+	margin: $gridSpacing*7 0;
+	background: #F7F7F7;
+	padding: $gridSpacing*2 0;
+}
+
+.section--screenshots {
+	margin: $gridSpacing*3 0;
+}
+
+.section--comments {
+	height: 260px;
+	margin: $gridSpacing*3 0;
+	background: #F7F7F7;
+}
+
+.section--business-advantages .section__title {
+	margin-bottom: $gridSpacing*2;
+}
+
+.section--why {
+	background: $brandDarkBlue;
+	color: #fff;
+	height: 650px;
+	margin-bottom: 110px;
+}
+
+.section--app-horizontal {
+	width: 100%;
+	margin-top: $gridSpacing*2;
+	background: linear-gradient(to bottom, #F2F2F2 0%,#F2F2F2 50%,#F2F2F2 50%,#fff 50%,#fff 100%);
+}
+
+.section--warranty {
+	height: 500px;
+	padding-top: 150px;
+}
+
+// Help promo
+
+.section-help-promo__wrapper {
+	margin: 150px 0 150px 0;
+	display: inline-block;
+	max-width: 1200px;
+}
+
+.section-help-promo__img {
+	width: 39%;
+	float: left;
+	text-align: right;
+}
+
+.section-help-promo__img img {
+	width: 200px;
+	height: auto;
+}
+
+.section-help-promo__info {
+	width: 60%;
+    float: right;
+    text-align: left;
+    margin-top: 33px;
+    color: $brandDarkBlue;
+}
+
+.section-help-promo__info-title {
+	font-size: 21px;
+	font-weight: 700;
+	margin-bottom: $gridSpacing*2;
+}
+
+.section-help-promo__info-subtitle {
+	font-size: 17px;
+	margin-bottom: $gridSpacing*2;
+}
+
+.section__postulate-announce {
+	margin: $gridSpacing*5 0;
+	height: 250px;
+	color: #fff;
+	@extend .effect__gradient-intense;
+}
+
+.section--app-details {
+	width: 100%;
+	text-align: center;
+}

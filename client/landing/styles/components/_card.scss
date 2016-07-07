@@ -1,0 +1,333 @@
+.card__row-basic {
+	width: 100%;
+	margin-top: $gridSpacing*5;
+}
+
+.card__presentation-basic {
+	display: inline-block;
+	max-width: 300px;
+	vertical-align: top;
+	margin: 0 3%;
+}
+
+.card__presentation-basic > img {
+	width: 100%;
+}
+
+.card__presentation-basic .normal { //TODO: change this!
+	height: 100%;
+	width: auto;
+	margin-bottom: $gridSpacing*3;
+}
+
+.card__basic-text {
+	width: 100%;
+}
+
+.card__basic-text div:first-child {
+	font-size: 17px;
+	font-weight: 700;
+	color: $brandDarkBlue;
+}
+
+.card__basic-text div:last-child {
+	margin-top: $gridSpacing;
+}
+
+/* Card dual */
+
+.card__dual {
+    display: inline-block;
+    width: 40%;
+	max-width: 500px;
+    vertical-align: top;
+	text-align: center;
+    margin: 0 3%;
+}
+
+.card__dual-img-container {
+	width: 100%;
+}
+
+.card__dual-img-container > img {
+	width: 250px;
+}
+
+.card__dual-text-container {
+	width: 100%;
+    height: 2em;
+    line-height: 2em;
+}
+
+.card__dual-text-container:first-child, .card__dual-text-container:last-child {
+	display: inline-block;
+	max-width: 300px;
+}
+
+.card__dual-text-container div:first-child {
+	margin-bottom: $gridSpacing*2;
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.card__dual-text-container div:last-child {
+	font-size: 17px;
+	line-height: 1.2em;
+}
+
+/* Card app */
+
+.card__app--title-bar {
+	width: 100%;
+    max-width: 1200px;
+    line-height: 2em;
+    margin: 22px;
+    display: inline-block;
+}
+
+.card__app--title {
+	float: left;
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.card__app--title-bar-action {
+	float: right;
+	width: 200px;
+}
+
+.card__app-wrapper {
+	width: 300px;
+	height: 350px;
+	margin: $gridSpacing;
+	border-radius: $borderRadius;
+	@extend .effect__shadow;
+	overflow: hidden;
+	cursor: pointer;
+	background: #fff;
+}
+
+.card__app-img-container {
+	width: 100%;
+	height: 170px;
+	background: url(../img/no-app-image.png);
+	background-size: contain;
+	background-size: cover;
+}
+
+.card__app-info {
+	text-align: left;
+	padding: $gridSpacing;
+}
+
+.card__app-name {
+	margin-bottom: $gridSpacing;
+	text-align: left;
+	font-weight: 700;
+	font-size: 17px;
+	color: #58595B;
+}
+
+.card__app-rate {
+	color: #58595B;
+}
+
+.card__app-rate, .card__app--description {
+	margin-bottom: $gridSpacing;
+	text-align: left;
+	font-size: 13px;
+	color: #808083;
+}
+
+.card__app-commerce {
+	text-align: center;
+}
+
+.card__app-commerce div:first-child {
+	width: 35%;
+	float: left;
+	box-sizing: border-box;
+	border-right: 1px solid $mediumGrey;
+}
+
+.card__app-commerce div:last-child {
+	float: right;
+	width: 65%;
+}
+
+.card__app-commerce-details span {
+	display: inline-block;
+	width: 100%;
+	font-size: 32px;
+	color: $activeNormal;
+	font-weight: 700;
+}
+
+.card__app-commerce-details span:first-child {
+	font-size: 13px;
+	color: #808083;
+	font-weight: 400;
+}
+
+.card__app-commerce-details span:last-child {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+// CARDS ALTERNATED
+
+.card__alternated-list {
+	display: inline-block;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.card__alternated-left, .card__alternated-right {
+	width: 100%;
+	display: inline-block;
+}
+
+.card__alternated-side-a, .card__alternated-side-b {
+	width: 49%;
+	display: inline-block;
+}
+
+.card__alternated-right .card__alternated-side-a {
+	float: right;
+}
+
+.card__alternated-right .card__alternated-side-b {
+	float: left;
+	text-align: right;
+}
+
+.card__alternated-left .card__alternated-side-a {
+	float: left;
+}
+
+.card__alternated-left .card__alternated-side-b {
+	float: right;
+	text-align: left;
+}
+
+.card__alternated-title {
+	display: inline-block;
+	margin: 15% 0 $gridSpacing 0;
+	font-size: 23px;
+	font-weight: 700;
+	color: $brandDarkBlue;
+}
+
+.card__alternated-description {
+	display: inline-block;
+	font-size: 17px;
+	color: #808080;
+}
+
+.card__alternated-img {
+	height: 350px;
+	width: auto;
+}
+
+// CARDS TRIPLES
+
+.card__blue {
+	background: $activeNormal;
+	width: 400px;
+	height: 520px;
+	padding: $gridSpacing*5 $gridSpacing*3 0 $gridSpacing*3;
+	border-radius: $borderRadius;
+	@extend .effect__shadow;
+	margin: $gridSpacing;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.card__blue img {
+	width: 250px;
+	height: auto;
+}
+
+.card__blue div:first-of-type {
+	margin: $gridSpacing*4 0 $gridSpacing*2 0;
+	font-size: 23px;
+	font-weight: 700;
+	color: #fff;
+	width: 300px;
+	display: inline-block;
+}
+
+.card__blue div:last-child {
+	font-size: 17px;
+	color: #fff;
+	line-height: 1.3em;
+}
+
+.card__row-list {
+	text-align: center;
+}
+
+// SCROLLABLE CARDS
+
+.card__scrollable-row-wrapper {
+  overflow-x: auto;
+}
+
+.card__scrollable-list {
+	padding-bottom: 22px;
+}
+
+.card__scrollable-list {
+	text-align: center;
+	list-style-type:none;
+    white-space: nowrap;
+}
+
+.card__scrollable-card {
+	width: 280px;
+	height: 400px;
+	white-space: normal;
+	display: inline-block;
+	border-radius: $borderRadius;
+	box-sizing: border-box;
+	padding: $gridSpacing;
+	background: white;
+	margin: 0 11px;
+}
+
+.card__scrollable-card-title, .card__scrollable-card-sub {
+	text-align: left;
+	margin-bottom: $gridSpacing;
+}
+
+.card__scrollable-card-title, .card__scrollable-card-sub  {
+	color: #484848;
+}
+
+.card__scrollable-card-title {
+	font-size: 17px;
+	margin-top: $gridSpacing*2;
+}
+
+.card__scrollable-card-sub {
+	font-size: 14px;
+}
+
+.card__scrollable-img-wrapper {
+	overflow: hidden;
+	width: 100%;
+	height: 220px;
+	text-align: center;
+	border-radius: $borderRadius;
+	overflow: hidden;
+}
+
+.card__scrollable-card img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.frame { width: 100%; height: 160px; padding: 0; }
+.frame .slidee { margin: 0; padding: 0; height: 100%; list-style: none; }
+.frame .slidee li { float: left; margin: 0 5px 0 0; padding: 0; width: 120px; height: 100%; }

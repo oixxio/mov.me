@@ -1,0 +1,70 @@
+.top-bar__container {
+    width: 100%;
+	position: absolute;
+    z-index: 80;
+}
+
+.top-bar__element {
+	display: inline-block;
+	margin: $gridSpacing*2 $gridSpacing 0 $gridSpacing;
+	vertical-align: middle;
+	color: #fff;
+}
+
+.top-bar__element--logo {
+	width: $desktopLogoWidth;
+	margin-top: 0;
+}
+
+.top-bar__element--menu {
+	margin-top: 0;
+	margin-right: 0;
+}
+
+.top-bar__element--menu i {
+	font-size: $menuBarsSize;
+}
+
+.top-bar--mobile {
+	display: none;
+}
+
+
+@media only screen and (max-width:900px) {
+
+	.top-bar__container {
+		height: $topBarMobileHeight;
+	}
+
+	.top-bar__element {
+		width: 23%;
+		font-size: $menuButtonSize;
+		text-align: center;
+		margin: 0;
+	}
+
+	.top-bar li:first-child {
+		text-align: left;
+	}
+
+	.top-bar li:last-child {
+		text-align: right;
+	}
+
+	.top-bar--mobile {
+		display: block;
+	}
+
+	.top-bar--normal {
+		display: none;
+	}
+
+	.top-bar__element--logo {
+		width: 50%;
+	}
+
+	.top-bar__element--logo img {
+		width: $mobileLogoWidth;
+	}
+
+}

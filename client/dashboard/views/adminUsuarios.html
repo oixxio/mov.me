@@ -1,0 +1,105 @@
+<div ng-controller="userController">
+  <div class="col-md-12 main">          
+    <div class="row page-header">
+      <div class="col-md-2">
+        <h1>Usuarios</h1>
+      </div><!-- /.col-md-2 -->
+      <div class="col-md-4 col-md-offset-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Buscar...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </span>
+        </div>
+      </div><!-- /.col-md-3 -->
+    </div><!-- /.row page-header-->
+  </div>
+
+  <uib-tabset active="active">
+    <uib-tab heading="Desarrolladores">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Perfil creado el</th>
+              <th>Apps Publicadas</th>
+              <th>Apps Alquiladas</th>
+              <td>Ganancias último mes</td>
+              <td>Ganancias totales</td>
+              <td>Ganancias próximo mes</td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="user in users | filter:{Type: 'Developer'}">
+              <td>{{user.Name}}</td>
+              <td>{{user.mail}}</td>
+              <td>{{user.Published_Apps}}</td>
+              <td>{{user.Rented_Apps}}</td>
+              <td>{{user.Last_Month_Earnings}}</td>
+              <td>{{user.Total_Earned}}</td>
+              <td>{{user.Next_Month_Earnings}}</td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+    <uib-tab heading="Clientes Registrados">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr >
+              <th>Nombre</th>
+              <th>Perfil creado el</th>
+              <th>Alquileres activos</th>
+              <th>Alquileres totales</th>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="user in users | filter:{Type: 'Client'}">
+              <td>{{user.Name}}</td>
+              <td>{{user.mail}}</td>
+              <td>-falta logica-</td>
+              <td>-falta logica</td>
+              <td>-falta logica</td>
+              <td>-falta logica</td>
+              <td>-falta logica</td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+  </uib-tabset>
+</div>
+

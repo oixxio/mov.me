@@ -1,0 +1,63 @@
+.postulate__title {
+	margin-bottom: $gridSpacing*2;
+	font-size: 17px;
+	font-weight: 700;
+	color: $brandDarkBlue;
+}
+
+.postulate__wrapper {
+	display: inline-block;
+	background: $brandDarkBlue;
+	width: 600px;
+	padding: $gridSpacing;
+	border-radius: $borderRadius;
+	box-sizing: border-box;
+	margin-bottom: $gridSpacing*5;
+}
+
+.postulate__optional, .postulate__upload-frame, .postulate__add-upload, .postulate__email, .postulate__add-file {
+	width: 100%;
+	border-radius: $borderRadius;
+	background: #fff;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: $gridSpacing;
+	margin-bottom: $gridSpacing;
+}
+
+.postulate__add-upload button {
+	width: 80%;
+	display: inline-block;
+}
+
+.postulate__add-upload div {
+	font-size: 13px;
+	color: #B3B3B3;
+	margin-top: $gridSpacing;
+}
+
+.postulate__send {
+	margin: $gridSpacing*2 0 0 0;
+}
+
+.postulate__send button {
+	width: 50%;
+	display: inline-block;
+}
+
+.postulate__add-file {
+	text-align: center;
+}
+
+
+.postulate__add-file button {
+	width: 80%;
+	display: inline-block;
+}
+
+.postulate__optional {
+	font-size: 13px;
+    font-weight: 700;
+    color: $brandDarkBlue;
+    margin: $gridSpacing 0 0 0;
+}

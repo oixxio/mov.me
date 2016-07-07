@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+      	<title>Dashboard</title>
+
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://getbootstrap.com/examples/dashboard/dashboard.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body ng-app="app.dashboard" ng-controller="indexController"> 	
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="cursor:pointer;">moviliza.me</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Admin 
+                                <img class="img-circle" src="http://i.imgur.com/OkdlbjL.png" height="40">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Cuenta</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Notificaciones</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+                    <ul class="nav nav-sidebar">
+                        <li ng-class="active1" ng-style="userMenu(1)"
+                            ng-click="goTo('/');setActive(1)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 
+                                Dashboard
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(1)" ng-class="active2"
+                            ng-click="goTo('proyectos');setActive(2)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 
+                                Proyectos 
+                                <span class="badge">{{projectsNumb}}</span>
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(1)" ng-class="active3"
+                            ng-click="goTo('aplicaciones');setActive(3)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> 
+                                Aplicaciones
+                                <span class="badge">{{applicationsNumb}}</span>
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(1)" ng-class="active4"
+                            ng-click="goTo('usuarios');setActive(4)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 
+                                Usuarios
+                                <span class="badge">{{usersNumb}}</span>
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(1)" ng-class="active5"
+                            ng-click="goTo('balance');setActive(5)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 
+                                Balance
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(2)" ng-class="active6"
+                            ng-click="goTo('apps&amp;juegos');setActive(6)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                                Apps y Juegos 
+                                <span class="badge">3</span>
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(2)" ng-class="active7"
+                            ng-click="goTo('cuenta');setActive(7)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+                                Cuenta
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(3)" ng-class="active8"
+                            ng-click="goTo('misApps');setActive(8)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> 
+                                Mis Apps 
+                                <span class="badge">5</span>
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(3)" ng-class="active9"
+                            ng-click="goTo('fianzas');setActive(9)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> 
+                                Finanzas
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(1)" ng-class="active10"
+                            ng-click="goTo('newApp');setActive(10)">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> 
+                                New App
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(1)"
+                            ng-click="goTo('client')">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 
+                                Dashboard
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(1)"
+                            ng-click="goTo('clientApps')">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 
+                                Apps y Juegos
+                            </a>
+                        </li>
+                        <li ng-style="userMenu(1)"
+                            ng-click="goTo('clientProfile')">
+                            <a style="cursor:pointer;">
+                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 
+                                Cuenta
+                            </a>
+                        </li>                         
+                    </ul>
+                </div>
+            <div class="col-md-offset-2 col-md-10">
+                <div ng-view></div>
+            </div>
+
+            </div>
+        </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.js"></script>
+  <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+  <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/app.routes.js"></script>
+  <script src="scripts/controllers/index-controller.js"></script>
+  <script src="scripts/controllers/projects-controller.js"></script>
+  <script src="scripts/controllers/users-controller.js"></script>
+  <script src="scripts/controllers/apps-controller.js"></script>
+  <script src="scripts/controllers/new-app-controller.js"></script>
+  <script src="scripts/services/login-factory.js"></script>
+  <script src="scripts/services/database-factory.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCFvpNLf8gqZ2grxQnm1Y_wuXiVwe1QqCU",
+        authDomain: "project-1684218826426422670.firebaseapp.com",
+        databaseURL: "https://project-1684218826426422670.firebaseio.com",
+        storageBucket: "project-1684218826426422670.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+</html>

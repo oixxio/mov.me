@@ -1,0 +1,115 @@
+.search__info {
+	display: inline-block;
+	width: 100%;
+	margin: $gridSpacing*3 0;
+	font-weight: 700;
+	font-size: 32px;
+	color: #ffffff;
+}
+
+.search__form {
+	display: inline-block;
+	width: 90%;
+	max-width: 800px;
+}
+
+.search {
+	width: 90%;
+	border: none;
+	-webkit-border-top-left-radius: $borderRadius*2;
+	-webkit-border-bottom-left-radius: $borderRadius*2;
+	-moz-border-radius-topleft: $borderRadius*2;
+	-moz-border-radius-bottomleft: $borderRadius*2;
+	border-top-left-radius: $borderRadius*2;
+	border-bottom-left-radius: $borderRadius*2;
+}
+
+.search--normal {
+	height: $searchNormalHeight;
+	background: #ffffff;
+	padding: $gridSpacing $gridSpacing*3;
+	font-size: $searchNormalFontSize;
+	font-family: $defaultFont;
+	font-weight: 700;
+	color: $brandDarkBlue;
+}
+
+.search__button {
+	float: right;
+    width: 10%;
+    height: $searchNormalHeight;
+    font-family: Roboto;
+    font-weight: 400;
+    color: $brandDarkBlue;
+    background: #ffffff;
+	cursor: pointer;
+	border: none;
+	-webkit-border-top-right-radius: $borderRadius*2;
+	-webkit-border-bottom-right-radius: $borderRadius*2;
+	-moz-border-radius-topright: $borderRadius*2;
+	-moz-border-radius-bottomright: $borderRadius*2;
+	border-top-right-radius: $borderRadius*2;
+	border-bottom-right-radius: $borderRadius*2;
+	-webkit-appearance: none;
+}
+
+.search--top {
+	height: 38px;
+    width: 200px;
+    display: block;
+    float: right;
+    padding: 0 $gridSpacing;
+    border-radius: 0;
+    -webkit-border-top-right-radius: $borderRadius;
+	-webkit-border-bottom-right-radius: $borderRadius;
+	-moz-border-radius-topright: $borderRadius;
+	-moz-border-radius-bottomright: $borderRadius;
+	border-top-right-radius: $borderRadius;
+	border-bottom-right-radius: $borderRadius;
+}
+
+.search__button-top {
+	padding: 0 $gridSpacing;
+	float: left;
+    height: 38px;
+    font-size: 22px;
+    color: $activeNormal;
+    background: #fff;
+	cursor: pointer;
+	border: none;
+	-webkit-border-top-left-radius: $borderRadius;
+	-webkit-border-bottom-left-radius: $borderRadius;
+	-moz-border-radius-topleft: $borderRadius;
+	-moz-border-radius-bottomleft: $borderRadius;
+	border-top-left-radius: $borderRadius;
+	border-bottom-left-radius: $borderRadius;
+	-webkit-appearance: none;
+}
+
+.search__button i {
+	font-size: $searchNormalFontSize;
+	color: $mediumGrey;
+}
+
+@media only screen and (max-width : 900px) {
+	.search {
+		width: 85%;
+	}
+	.search__info {
+		font-size: 22px;
+		margin: $gridSpacing*2 0;
+	}
+	.search--normal {
+		height: $search_Mobile_Height;
+		padding: $gridSpacing $gridSpacing*2;
+		font-size: 22px;
+	}
+	.search__button {
+		width: 15%;
+		height: $search_Mobile_Height;
+	}
+	.search__info {
+		font-size: 17px;
+		font-weight: 700;
+	}
+}

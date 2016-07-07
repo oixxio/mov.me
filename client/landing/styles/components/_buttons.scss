@@ -1,0 +1,89 @@
+.button {
+	display: block;
+	text-align: center;
+	font-family: $defaultFont;
+	font-size: $buttonTextSize;
+	padding: $gridSpacing $gridSpacing*2;
+	border-radius: $borderRadius;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.button--secondary-white {
+	color: #ffffff;
+	border: $btnSecBorderWidth solid #ffffff;
+}
+
+.button--secondary-white:hover {
+	background: $activeNormal;
+	color: #ffffff;
+	border: $btnSecBorderWidth solid $activeNormal;
+}
+
+.button--main {
+	width: 100%;
+	height: 50px;
+	font-size: 17px;
+	font-weight: 700;
+	color: #fff;
+	background: $activeNormal;
+}
+
+.button--main-small {
+	width: 100%;
+	height: 34px;
+	font-size: 11px;
+	font-weight: 300;
+	color: #fff;
+	background: $activeNormal;
+	text-transform: uppercase;
+}
+
+.button--log-facebook {
+	width: 100%;
+	height: 50px;
+	background: #3B5998;
+	font: normal 700 17px/1 $defaultFont;
+	letter-spacing: 0.06em;
+	color: #fff;
+}
+
+.button--main-active {
+	background: $activeNormal;
+	border: 1px solid $activeNormal;
+	color: #fff;
+}
+
+.button--secondary-active {
+	background: transparent;
+	border: 1px solid $activeNormal;
+	color: $activeNormal;
+}
+
+.button--secondary-positive {
+	text-transform: uppercase;
+	background: $positiveNormal;
+	color: #fff;
+}
+
+.button--secondary-dark {
+	width: 200px;
+	background: transparent;
+	border: 1px solid $brandDarkBlue;
+	color: $brandDarkBlue;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width : 300px) {
+	.button__login {
+		color: red;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	.button__login {
+		color: blue;
+	}
+}

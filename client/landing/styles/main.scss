@@ -1,0 +1,54 @@
+@import 'components/reset',
+		'components/variables',
+		'components/effects',
+		'components/fonts',
+		'components/layout',
+		'components/top-bar',
+		'components/buttons',
+		'components/nav-menu',
+		'components/presentation',
+		'components/section',
+		'components/search',
+		'components/link',
+		'components/login',
+		'components/input',
+		'components/card',
+		'components/list',
+		'components/footer',
+		'components/postulate',
+		'components/app-details',
+		'components/rent-plan',
+		'components/blured',
+		'components/screenshots';
+
+@import 'font_awesome/variables',
+		'font_awesome/mixins',
+		'font_awesome/path',
+		'font_awesome/core',
+		'font_awesome/larger',
+		'font_awesome/fixed-width',
+		'font_awesome/list',
+		'font_awesome/bordered-pulled',
+		'font_awesome/animated',
+		'font_awesome/rotated-flipped',
+		'font_awesome/stacked',
+		'font_awesome/icons',
+		'font_awesome/screen-reader';
+
+.body {
+	font-family: $defaultFont;
+	overflow-x: hidden;
+}
+
+.html, .body {
+	width: 100%;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+strong {
+	font-weight: 700;
+}

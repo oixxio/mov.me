@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clients Landing</title>
+	<link rel="stylesheet" href="../css temp/styles-landing.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body class="body" ng-app="hardcoded" ng-controller="landingCtrl">
+	<div class="top-bar__container">
+		<!-- DESKTOP TOP BAR -->
+		<ul class="top-bar top-bar--normal">
+			<li class="top-bar__element top-bar__element--logo layout__float-l">
+				<img src="../img/logo-horizontal-clear.svg" alt="Moviliza.me logo">
+			</li>
+			<li class="top-bar__element layout__float-l">
+				<a class="link link--nav">Contact</a>
+			</li>
+			<li class="top-bar__element layout__float-l">
+				<a class="link link--nav">Help Center</a>
+			</li>
+			<li class="top-bar__element layout__float-r">
+				<a class="button button--secondary-white">Iniciar sesión</a>
+			</li>
+			<li class="top-bar__element layout__float-r">
+				<a class="link link--nav">Para desarroladores</a>
+			</li>
+		</ul>
+		<!-- MOBILE TOP BAR -->
+		<ul class="top-bar top-bar--mobile">
+			<li class="top-bar__element top-bar__element">
+				<i class="button fa fa-bars" ng-click="showMenu = ! showMenu"></i>
+			</li>
+			<li class="top-bar__element top-bar__element--logo">
+				<img src="../img/logo-horizontal-clear.svg" alt="Moviliza.me logo">
+			</li>
+			<li class="top-bar__element top-bar__element">
+				<i class="button fa fa-user"></i>
+			</li>
+		</ul>
+	</div>
+	<!-- LOGIN MENU -->
+<!-- 	<div class="login__overlay">
+		<div class="login">
+			<div class="login__top">
+				<span>Login</span>
+				<i class="fa fa-close"></i>
+			</div>
+			<button class="button button--log-facebook">
+				<i class="fa fa-facebook"></i>
+				<span>Continuar con Facebook</span>
+			</button>
+			<form class="login__form" action="">
+				<label class="login__label"for="input-mail">E-mail</label>
+				<input class="input" type="text" name="user-email" id="input-email">
+				<label class="login__label"for="input-mail">Contraseña</label>
+				<input class="input" type="text" name="user-password" id="input-password">
+				<div class="login__pass-recover">¿Olvidaste tu contraseña?</div>
+				<button type="submit" class="button button--main">
+					Iniciar sesión
+				</button>
+			</form>
+			<div class="login__bottom">
+				<button class="button button--secondary-active layout__float-r">
+					Crea una cuenta
+				</button>
+				<a class="buttom">Ingresa como desarrollador</a>
+			</div>
+		</div>
+	</div> -->
+	<!-- SIDE NAVIGATION MENU -->
+	<ul class="nav-menu effect__animate-hide" ng-show="showMenu">
+		<ul>
+			<li class="top-bar__element">
+				<i class="button button--white fa fa-arrow-left" ng-click="showMenu = ! showMenu"></i>
+			</li>
+			<li class="top-bar__element top-bar__element--logo">
+				<img src="../img/logo-horizontal-clear.svg" alt="Moviliza.me logo">
+			</li>
+		</ul>
+		<li>
+			<a class="nav-menu__link">¿Cómo funciona?</a>
+		</li>
+		<li>
+			<a class="nav-menu__link">Para desarroladores</a>
+		</li>
+		<li>
+			<a class="nav-menu__link">Help Center</a>
+		</li>
+	</ul>
+	<!-- FIRST PRESENTATION SECTION -->
+	<section class="section section--presentation">
+		<div class="presentation">
+			<div class="presentation__text">
+				<div class="presentation__title">La <span>aplicación móvil o juego</span> que su negocio o empresa necesita</div>
+				<div class="presentation__subtitle">A una fracción del costo y en tiempo record</div>
+				<div class="presentation__call-secondary">
+					<a class="button button--secondary-white">¿Cómo funciona?</a>
+				</div>
+			</div>
+			<div class="presentation__overlay">
+				<div class="presentation__gradient"></div>
+				<div class="presentation__search">
+					<div class="search__info">
+						¿Qué es lo que hace su empresa?
+					</div>
+					<form class="search__form" action="">
+						<input class="search search--normal" name="search" type="search">
+						<button class="search__button" type="submit">
+							<i class="fa fa-search"></i>
+						</button>
+					</form>
+				</div>		
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--how">
+		<div class="section__title">
+			¿Cómo funciona?
+		</div>
+		<div class="card__row-basic">
+			<div class="card__presentation-basic">
+				<img src="../img/how-works-01.png" alt="">
+				<div class="card__basic-text">
+					<div>Elija una app</div>
+					<div>Elegí entre las mejores apps y juegos cuidadósamente seleccionados y probados por nosotros</div>
+				</div>
+			</div>
+			<div class="card__presentation-basic">
+				<img src="../img/how-works-02.png" alt="">
+				<div class="card__basic-text">
+					<div>Elija que cambiar o agregar</div>
+					<div>Usando los datos y el material proporcionado, transformamos tu elección en un producto personalizado para su necesidad</div>
+				</div>
+			</div>
+			<div class="card__presentation-basic">
+				<img src="../img/why-01.png" alt="">
+				<div class="card__basic-text">
+					<div>¿Por qué Moviliza.me?</div>
+					<div>Porque ofrecemos una alternativa de bajo costo, rápida sin riesgos para que su negocio se acerque al mundo de las aplicaciones y juegos móbiles.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--why">
+		<div class="section__title">
+			Conozca a sus clientes, mejore la comunicación interna o de a conocer un producto 
+		</div>
+		<div class="card__row-basic">
+
+			<div class="card__dual">
+				<div class="card__dual-img-container">
+					<img src="../img/why-01.svg" alt="">
+				</div>
+				<div class="card__dual-text-container">
+					<div>¿Por qué una aplicación?</div>
+					<div>Su negocio necesita estar donde sus clientes están. Hoy su cliente pasa más tiempo utilizando su smartphone que cualquier otro medio.</div>
+				</div>
+			</div>
+
+			<div class="card__dual">
+				<div class="card__dual-img-container">
+					<img src="../img/why-02.svg" alt="">
+				</div>
+				<div class="card__dual-text-container">
+					<div>¿Por qué Moviliza.me?</div>
+					<div>Porque ofrecemos una alternativa de bajo costo, rápida sin riesgos para que su negocio se acerque al mundo de las aplicaciones y juegos móbiles.</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	
+	<section class="section section--app-horizontal">
+		<div class="card__app--title-bar">
+			<div class="card__app--title">Apps destacadas</div>
+			<div class="card__app--title-bar-action">
+				<button class="button button--main-small">Ver todas las apps</button>
+			</div>
+		</div>
+		<ul class="list__horizontal">
+			<li class="list list__horizontal-item list--tripe">
+				<div class="card__app-wrapper">
+					<div class="card__app-img-container">
+						<img src="">
+					</div>
+					<div class="card__app-info">
+						<div class="card__app-name">
+							Super extra calendar 2016
+						</div>
+						<div class="card__app-rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="card__app--description">
+							This is and app for those that love apps about calendar and have a company.
+						</div>
+						<div class="card__app-commerce">
+							<div class="card__app-commerce-details">
+								<span>Tenela en</span>
+								<span>10</span>
+								<span>días</span>
+							</div>
+							<div class="card__app-commerce-details">
+								<span>Desde</span>
+								<span>$374.45</span>
+								<span>por mes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="list list__horizontal-item list--tripe">
+				<div class="card__app-wrapper">
+					<div class="card__app-img-container">
+						<img src="">
+					</div>
+					<div class="card__app-info">
+						<div class="card__app-name">
+							Super extra calendar 2016
+						</div>
+						<div class="card__app-rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="card__app--description">
+							This is and app for those that love apps about calendar and have a company.
+						</div>
+						<div class="card__app-commerce">
+							<div class="card__app-commerce-details">
+								<span>Tenela en</span>
+								<span>10</span>
+								<span>días</span>
+							</div>
+							<div class="card__app-commerce-details">
+								<span>Desde</span>
+								<span>$374.45</span>
+								<span>por mes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="list list__horizontal-item list--tripe">
+				<div class="card__app-wrapper">
+					<div class="card__app-img-container">
+						<img src="">
+					</div>
+					<div class="card__app-info">
+						<div class="card__app-name">
+							Super extra calendar 2016
+						</div>
+						<div class="card__app-rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="card__app--description">
+							This is and app for those that love apps about calendar and have a company.
+						</div>
+						<div class="card__app-commerce">
+							<div class="card__app-commerce-details">
+								<span>Tenela en</span>
+								<span>10</span>
+								<span>días</span>
+							</div>
+							<div class="card__app-commerce-details">
+								<span>Desde</span>
+								<span>$374.45</span>
+								<span>por mes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+
+		</ul>
+	</section>
+
+	<section class="section section--app-horizontal">
+		<div class="card__app--title-bar">
+			<div class="card__app--title">Apps destacadas</div>
+			<div class="card__app--title-bar-action">
+				<button class="button button--main-small">Ver todas las apps</button>
+			</div>
+		</div>
+		<ul class="list__horizontal">
+			<li class="list list__horizontal-item list--tripe">
+				<div class="card__app-wrapper">
+					<div class="card__app-img-container">
+						<img src="">
+					</div>
+					<div class="card__app-info">
+						<div class="card__app-name">
+							Super extra calendar 2016
+						</div>
+						<div class="card__app-rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="card__app--description">
+							This is and app for those that love apps about calendar and have a company.
+						</div>
+						<div class="card__app-commerce">
+							<div class="card__app-commerce-details">
+								<span>Tenela en</span>
+								<span>10</span>
+								<span>días</span>
+							</div>
+							<div class="card__app-commerce-details">
+								<span>Desde</span>
+								<span>$374.45</span>
+								<span>por mes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="list list__horizontal-item list--tripe">
+				<div class="card__app-wrapper">
+					<div class="card__app-img-container">
+						<img src="">
+					</div>
+					<div class="card__app-info">
+						<div class="card__app-name">
+							Super extra calendar 2016
+						</div>
+						<div class="card__app-rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="card__app--description">
+							This is and app for those that love apps about calendar and have a company.
+						</div>
+						<div class="card__app-commerce">
+							<div class="card__app-commerce-details">
+								<span>Tenela en</span>
+								<span>10</span>
+								<span>días</span>
+							</div>
+							<div class="card__app-commerce-details">
+								<span>Desde</span>
+								<span>$374.45</span>
+								<span>por mes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="list list__horizontal-item list--tripe">
+				<div class="card__app-wrapper">
+					<div class="card__app-img-container">
+						<img src="">
+					</div>
+					<div class="card__app-info">
+						<div class="card__app-name">
+							Super extra calendar 2016
+						</div>
+						<div class="card__app-rate">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="card__app--description">
+							This is and app for those that love apps about calendar and have a company.
+						</div>
+						<div class="card__app-commerce">
+							<div class="card__app-commerce-details">
+								<span>Tenela en</span>
+								<span>10</span>
+								<span>días</span>
+							</div>
+							<div class="card__app-commerce-details">
+								<span>Desde</span>
+								<span>$374.45</span>
+								<span>por mes</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+		</ul>
+	</section>
+
+	<section class="section section--warranty">
+		<div class="card__row-basic">
+			<div class="card__presentation-basic">
+				<img src="../img/shield.png" alt="">
+				<div class="card__basic-text">
+					<div>Garantía decalidad</div>
+				</div>
+			</div>
+			<div class="card__presentation-basic">
+				<img src="../img/shield.png" alt="">
+				<div class="card__basic-text">
+					<div>su compra protejida</div>
+				</div>
+			</div>
+			<div class="card__presentation-basic">
+				<img src="../img/shield.png" alt="">
+				<div class="card__basic-text">
+					<div>Una fracción del costo</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="presentation__search">
+			<div class="search__info">
+				¿Qué es lo que hace su empresa?
+			</div>
+			<form class="search__form" action="">
+				<input class="search search--normal" name="search" type="search">
+				<button class="search__button" type="submit">
+					<i class="fa fa-search"></i>
+				</button>
+			</form>
+		</div>			
+	</section>
+
+	<section class="section section-help-promo">
+		<div class="section-help-promo__wrapper">
+			<div class="section-help-promo__img">
+				<img src="../img/help-promo.png">
+			</div>
+			<div class="section-help-promo__info">
+				<div class="section-help-promo__info-title">¿Dudas o consultas?</div>
+				<div class="section-help-promo__info-subtitle">
+					¡Escríbenos a <strong>compras@moviliza.me</strong> y comencemos a charlar!
+					Tambien puedes visitar nuestro centro de ayuda para las preguntas más frecuentes.
+				</div>
+				<button class="button button--secondary-dark">Help center</button>
+			</div>
+		</div>			
+	</section>
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__nav">
+				<ul class="footer__nav-list">
+					<li>¿Cómo funciona?</li>
+					<li>Aplicaciones</li>
+					<li>Juegos</li>
+					<li>Help Center</li>
+					<li>Sugerir una aplicación</li>
+					<li>Trabaja con nosotros</li>
+					<li>Legales</li>
+					<li>Contacto</li>
+				</ul>
+			</div>
+			<div class="footer__login">
+				<button class="button button--secondary-white">Soy desarrollador</button>
+				<button class="button button--secondary-white">Ingresar</button>
+			</div>
+			<div class="footer__social">
+				<span>Encuentranos en:</span>
+				<ul class="footer__social-list">
+					<li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+					<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+				</ul>
+			</div>
+			<div class="footer__legal">
+				<div class="footer__int">
+					<i class="fa fa-language"></i>
+					<i class="fa fa-dollar"></i>
+					<span>Español - Argentina</span>
+					<div class="footer__local">
+						Córdoba, Argentina
+						Av. Savatini 1600
+						(0351) 153 171122
+					</div>
+				</div>
+				<div class="footer__afip">
+					<img src="../img/afip.png">
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<script src="../../node_modules/angular/angular.min.js"></script>
+	<script src="../scripts/app.js"></script>
+	
+</body>
+</html>

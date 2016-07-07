@@ -1,0 +1,116 @@
+.presentation {
+	width: 100%;
+	height: $presentationHeight;
+	position: relative;
+	background: #ffffff url('../img/landing-background.jpg') no-repeat center;
+	background-size: cover;
+	  &:before {
+    		content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
+			background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 60%);
+			background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 60%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+  		}
+}
+
+.presentation__text {
+	padding: 10% 0 0 $margin+%;
+	position: relative;
+	text-align: left;
+	z-index: 30;
+}
+
+.presentation__overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.presentation__gradient {
+	width: 100%;
+	height: $presentationHeight - $presentationSearchHeight;
+}
+
+.presentation__search {
+	width: 100%;
+	height: $presentationSearchHeight;
+	text-align: center;
+	background: $negativeTrans;
+}
+
+.presentation__title {
+	max-width: 850px;
+	font-size: $preTitleSize;
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: $gridSpacing;
+}
+
+.presentation__title span {
+	color: $brandModernGreen;
+}
+
+.presentation__subtitle {
+	margin-bottom: $gridSpacing;
+	font-size: $preSubTitleSize;
+	font-weight: 300;
+	color: #ffffff;
+	letter-spacing: 0.05em;
+}
+
+.presentation__call-secondary {
+	display: inline-block;
+	margin-top: $gridSpacing*3;
+}
+
+@media only screen and (max-width : 900px) {
+	.presentation {
+		height: $presentationHeightMobile;
+	}
+
+	.presentation__text {
+		padding-top: $gridSpacing*8;
+	}
+
+	.presentation__title {
+		font-size: $preTitleSizeMobile;
+	}
+	
+	.presentation__subtitle {
+		margin-right: 25%;
+		font-size: $preSubTitleSizeMobile;
+		line-height: 1.1;
+	}
+
+	.presentation__call-secondary {
+		display: none;
+	}
+
+	.presentation__gradient {
+		height: $presentationHeightMobile - $presentationSearchHeightMobile;
+	}
+
+}
+
+// Developers Page
+
+.presentation__developers{
+	height: 630px;
+}
+
+
+// Presentation landing
+
+.section__login-screen {
+    height: 100%;
+	background: url("../img/landing-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

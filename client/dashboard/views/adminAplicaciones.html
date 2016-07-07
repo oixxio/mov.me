@@ -1,0 +1,224 @@
+<div ng-controller="appsController">
+  <div class="col-md-12 main">          
+    <div class="row page-header">
+      <div class="col-md-2">
+        <h1>Aplicaciones</h1>
+      </div><!-- /.col-md-2 -->
+      <div class="col-md-4 col-md-offset-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Buscar...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </span>
+        </div>
+      </div><!-- /.col-md-3 -->
+    </div><!-- /.row page-header-->
+  </div>
+  <uib-tabset active="active">
+    <uib-tab heading="Postulaciones">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="app in applications | filter:{State: 'Postulated'}">
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
+              <td>{{app.Developer}}</td>
+              <td>{{app.Description}}</td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+    <uib-tab heading="Aprobadas">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+               <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="app in applications | filter:{State: 'Approved'}">
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
+              <td>{{app.Developer}}</td>
+              <td>{{app.Description}}</td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+    <uib-tab heading="Publicadas">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+               <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="app in applications | filter:{State: 'Published'}">
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
+              <td>{{app.Developer}}</td>
+              <td>{{app.Description}}</td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+    <uib-tab heading="Borradores">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+               <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="app in applications | filter:{State: 'Draft'}">
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
+              <td>{{app.Developer}}</td>
+              <td>{{app.Description}}</td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+    <uib-tab heading="Retiradas">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+               <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="app in applications | filter:{State: 'Withdrawn'}">
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
+              <td>{{app.Developer}}</td>
+              <td>{{app.Description}}</td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </uib-tab>
+  </uib-tabset>   
+</div>

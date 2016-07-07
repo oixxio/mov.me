@@ -1,0 +1,32 @@
+.nav-menu {
+	position:fixed !important;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	width: $navMenuWidth;
+	background: $brandDarkBlue;
+	color: #ffffff;
+	z-index: 80;
+	@extend .effect__shadow;
+}
+
+.nav-menu__footer {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width: $navMenuWidth;
+	background: $brandDarkBlue;
+	color: $navMenuTextColor;
+}
+
+.nav-menu > li, .nav-menu__footer > li {
+	width: 80%;
+	margin: $gridSpacing*2 + $margin;
+	letter-spacing: 0.05em;
+}
+
+.nav-menu__link {
+	font-size: $navMenuFontSize;
+}

@@ -1,0 +1,21 @@
+
+.blured {
+	height: 425px
+}
+
+.blured__container {
+	position: relative;
+    z-index: 10;
+    margin-bottom: 44px;
+}
+
+.blured__image-wrapper {
+	position: absolute;
+	bottom: 0;
+	height: 600px;
+}
+
+.blured__container .section__title {
+	color: white;
+	margin-bottom: 55px;
+}

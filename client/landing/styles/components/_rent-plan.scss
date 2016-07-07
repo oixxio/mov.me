@@ -1,0 +1,69 @@
+.rent__plan-element {
+	display: inline-block;
+	width: 300px;
+	padding: $gridSpacing 0;
+	box-sizing: border-box;
+	border-radius: $borderRadius;
+	@extend .effect__shadow;
+	margin: $gridSpacing;
+	vertical-align: top;
+}
+
+.rent__plan-element button {
+	display: inline-block;
+	margin: $gridSpacing;
+	width: 80%;
+}
+
+.rent__plan-name {
+	font-size: 17px;
+	margin: $gridSpacing 0;
+	color: $brandDarkBlue;
+}
+
+.rent__plan-name span {
+	font-size: 32px;
+	font-weight: 700;
+	width: 100%;
+    display: inline-block;
+}
+
+.rent__plan-list-details {
+	margin-top: $gridSpacing;
+}
+
+.rent__plan-list-details li {
+	border-bottom: 1px solid #F1F1F1;
+	padding: $gridSpacing;
+	text-align: left;
+	font-size: 13px;
+	color: $brandDarkBlue;
+	cursor: pointer;
+}
+
+.rent__plan-list-details li:Hover {
+	background: #F1F1F1;
+}
+
+.rent__plan-list-details li:first-child span {
+	font-size: 23px;
+	display: initial;
+}
+
+
+.rent__plan-list-details li span {
+	font-weight: 700;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: $gridSpacing/2;
+}
+
+.rent__plan-price {
+	font-size: 13px;
+	margin: $gridSpacing*2;
+}
+
+.rent__plan-price span {
+	font-size: 32px;
+	font-weight: 700;
+}

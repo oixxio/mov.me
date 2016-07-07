@@ -1,0 +1,111 @@
+.app-details__presentation {
+	width: 100%;
+	height: 540px;
+	position: relative;
+	background: #ffffff url('../img/landing-background.jpg') no-repeat center;
+	background-size: cover;
+	  &:before {
+    		content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
+			background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 60%);
+			background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 60%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+  		}
+}
+
+.app-details__overlay {
+	max-width: 1000px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+	margin-bottom: -4px;
+}
+
+.app-details__overlay img {
+	width: 400px;
+	height: auto;
+	float: right;
+}
+
+.app-details__title {
+	position: absolute;
+	bottom: $gridSpacing*2;
+	left: $gridSpacing*2;
+	color: #fff;
+	font-size: 34px;
+	font-weight: 700;
+}
+
+.app-details__description {
+	max-width: 1000px;
+	display: inline-block;
+	text-align: left;
+}
+
+.app-details__description-text {
+	float: left;
+	width: 60%;
+}
+
+.app__details__author {
+	font-size: 13px;
+	margin: $gridSpacing $gridSpacing*2;
+}
+
+.app__details__author span {
+	display: inline-block;
+	font-size: 17px;
+	color: $brandDarkBlue;
+	font-weight: 700;
+}
+
+.app__details__ranking {
+	font-size: 13px;
+	color: $brandDarkBlue;
+	margin: 0 0 $gridSpacing $gridSpacing*2;
+}
+
+.app__details__long-description {
+	font-size: 17px;
+	color: $brandDarkBlue;
+	line-height: 1.1em;
+	margin: 0 0 $gridSpacing*3 $gridSpacing*2;
+}
+
+.app__details__download {
+	margin: 0 0 $gridSpacing*3 $gridSpacing*2;
+}
+
+.app-details__description-buy {
+	float: right;
+	margin: $gridSpacing*2;
+	padding: $gridSpacing*2 $gridSpacing;
+	width: 250px;
+	border-radius: $borderRadius;
+	background: #F5F5F5;
+	border: 1px solid #CECECE;
+    border-top: 5px solid #CECECE;
+}
+
+.app-details__description-buy-action {
+	width: 100%;
+	text-align: center;
+}
+
+.app-details__description-buy-action button{
+	display: inline-block;
+	width: 100%;
+	margin-top: $gridSpacing*2;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.07em;
+}
