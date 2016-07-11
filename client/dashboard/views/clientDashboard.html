@@ -12,7 +12,10 @@
 			<div class="alert alert-info" role="alert" style="display:flex;">
 				<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" style="font-size: x-large;line-height: 1.28;"></span>
 				<p style="margin-left: 15px;font-size: small;"><b>Bienvenido!</b><br>Para que nuestros desarrolladores puedan comenzar, debe completar los requerimientos</p>
-				<button class="btn btn-info" style="margin-left: auto;"><b>Ir a mis Apps</b></button>
+				<button ng-click="goTo('clientApps')"
+								class="btn btn-info" style="margin-left: auto;">
+					<b>Ir a mis Apps</b>
+				</button>
 			</div>
 		</div>
 	</div>

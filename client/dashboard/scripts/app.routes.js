@@ -3,28 +3,46 @@
     angular.module('app.dashboard')
     .config(['$routeProvider',function($routeProvider) {
 		$routeProvider.
-	    when('/',{
+	    when('/adminDashboard',{
 			templateUrl: 'views/adminDashboard.html'
 		}).
-	    when('/usuarios',{
+	    when('/adminUsers',{
 			templateUrl: 'views/adminUsuarios.html'
 		}).
-	    when('/proyectos',{
+	    when('/adminProjects',{
 			templateUrl: 'views/adminProyectos.html'
 		}).
 		when('/adminProject',{
 			templateUrl: 'views/adminProject.html'
 		}).
-	    when('/balance',{
+	    when('/adminBalance',{
 			templateUrl: 'views/adminBalance.html'
 		}).
-	    when('/aplicaciones',{
+	    when('/adminApps',{
 			templateUrl: 'views/adminAplicaciones.html'
 		}).
 		when('/projectView',{
 			templateUrl: 'views/adminDashboard.html'
 		}).
-		when('/client',{
+		when('/devDashboard',{
+			templateUrl: 'views/clientDashboard.html'
+		}).
+		when('/devProjects',{
+			templateUrl: 'views/clientApps.html'
+		}).
+		when('/devApps',{
+			templateUrl: 'views/adminAplicaciones.html'
+		}).		
+		when('/devApp',{
+			templateUrl: 'views/clientApp.html'
+		}).
+		when('/devProfile',{
+			templateUrl: 'views/clientProfile.html'
+		}).
+		 when('/devFinance',{
+			templateUrl: 'views/adminBalance.html'
+		}).
+		when('/clientDashboard',{
 			templateUrl: 'views/clientDashboard.html'
 		}).
 		when('/clientApps',{

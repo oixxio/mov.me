@@ -75,132 +75,13 @@
     	$scope.goTo = function (view) {
     		 $location.path(view);
     	}
-        $scope.setActive = function(option){
-            switch (option) {
-                case 1:
-                    $scope.active1 = 'active'
-                    $scope.active2 = ''
-                    $scope.active3 = ''
-                    $scope.active4 = ''
-                    $scope.active5 = ''
-                    $scope.active6 = ''
-                    $scope.active7 = ''
-                    $scope.active8 = ''
-                    $scope.active9 = ''
-                    $scope.active10 = ''
-                    break;
-                case 2:
-                    $scope.active1 = ''
-                    $scope.active2 = 'active'
-                    $scope.active3 = ''
-                    $scope.active4 = ''
-                    $scope.active5 = ''
-                    $scope.active6 = ''
-                    $scope.active7 = ''
-                    $scope.active8 = ''
-                    $scope.active9 = ''
-                    $scope.active10 = ''
-                    break;
-                case 3:
-                    $scope.active1 = ''
-                    $scope.active2 = ''
-                    $scope.active3 = 'active'
-                    $scope.active4 = ''
-                    $scope.active5 = ''
-                    $scope.active6 = ''
-                    $scope.active7 = ''
-                    $scope.active8 = ''
-                    $scope.active9 = ''
-                    $scope.active10 = ''
-                    break;
-                case 4:
-                    $scope.active1 = ''
-                    $scope.active2 = ''
-                    $scope.active3 = ''
-                    $scope.active4 = 'active'
-                    $scope.active5 = ''
-                    $scope.active6 = ''
-                    $scope.active7 = ''
-                    $scope.active8 = ''
-                    $scope.active9 = ''
-                    $scope.active10 = ''
-                    break;
-                case 5:
-                    $scope.active1 = ''
-                    $scope.active2 = ''
-                    $scope.active3 = ''
-                    $scope.active4 = ''
-                    $scope.active5 = 'active'
-                    $scope.active6 = ''
-                    $scope.active7 = ''
-                    $scope.active8 = ''
-                    $scope.active9 = ''
-                    $scope.active10 = ''
-                    break;
-                case 6:
-                    $scope.active1 = ''
-                    $scope.active2 = ''
-                    $scope.active3 = ''
-                    $scope.active4 = ''
-                    $scope.active5 = ''
-                    $scope.active6 = 'active'
-                    $scope.active7 = ''
-                    $scope.active8 = ''
-                    $scope.active9 = ''
-                    $scope.active10 = ''
-                    break;
-                case 7:
-                    $scope.active1 = ''
-                    $scope.active2 = ''
-                    $scope.active3 = ''
-                    $scope.active4 = ''
-                    $scope.active5 = ''
-                    $scope.active6 = ''
-                    $scope.active7 = 'active'
-                    $scope.active8 = ''
-                    $scope.active9 = ''
-                    $scope.active10 = ''
-                    break;
-                case 8:
-                    $scope.active1 = ''
-                    $scope.active2 = ''
-                    $scope.active3 = ''
-                    $scope.active4 = ''
-                    $scope.active5 = ''
-                    $scope.active6 = ''
-                    $scope.active7 = ''
-                    $scope.active8 = 'active'
-                    $scope.active9 = ''
-                    $scope.active10 = ''
-                    break;
-                case 9:
-                    $scope.active1 = ''
-                    $scope.active2 = ''
-                    $scope.active3 = ''
-                    $scope.active4 = ''
-                    $scope.active5 = ''
-                    $scope.active6 = ''
-                    $scope.active7 = ''
-                    $scope.active8 = ''
-                    $scope.active9 = 'active'
-                    $scope.active10 = ''
-                    break;
-                case 10:
-                    $scope.active1 = ''
-                    $scope.active2 = ''
-                    $scope.active3 = ''
-                    $scope.active4 = ''
-                    $scope.active5 = ''
-                    $scope.active6 = ''
-                    $scope.active7 = ''
-                    $scope.active8 = ''
-                    $scope.active9 = ''
-                    $scope.active10 = 'active'
-                    break;
-                default:
-                    // statements_def
-                    break;
-            }
+        //TODO: sacar esta demoAlert en para produccion
+        $scope.demoAlert = function(str){
+            alert(str);
+        }
+        //TODO: re hacer este switch da asco 
+        $scope.setActive = function(path){
+            return ($location.path().substr(0, path.length) === path) ? 'active' : '';
         }
 
 
