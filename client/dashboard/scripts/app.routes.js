@@ -12,6 +12,9 @@
 	    when('/proyectos',{
 			templateUrl: 'views/adminProyectos.html'
 		}).
+		when('/adminProject',{
+			templateUrl: 'views/adminProject.html'
+		}).
 	    when('/balance',{
 			templateUrl: 'views/adminBalance.html'
 		}).
@@ -32,6 +35,9 @@
 		}).
 		when('/clientProfile',{
 			templateUrl: 'views/clientProfile.html'
+		}).
+		when('/appPage',{
+			templateUrl: 'views/appPage.html'
 		}).					
 		when('/newApp',{
 			templateUrl: 'views/newApp.html'
