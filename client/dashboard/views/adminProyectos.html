@@ -21,26 +21,22 @@
           <thead>
             <tr>
               <th>Proyecto</th>
-              <th>Aplicacion</th>
               <th>Cliente</th>
               <th>Desarrollador</th>
               <th>Estado</th>
               <th>Requerimientos</th>
+              <th>Fecha Lanzamiento</th>
               <th>Alquiler finaliza</th>
             </tr>
           </thead>
           <tbody>
             <tr ng-repeat="project in projects">
-              <td ng-click="goTo('adminProject')">{{project.Name}}</td>
-              <td ng-click="goTo('appPage')">{{project.App}}</td>
-              <td ng-click="goTo('adminProject')">{{project.Client}}</td>
+              <td>{{project.Name}}</td>
+              <td>{{project.Client}}</td>
               <td>{{project.Developer}}</td>
-              <td ng-click="goTo('adminProject')"><span class="glyphicon glyphicon-time" aria-hidden="true">
-                </span>{{project.State}}
-              </td>
-              <td ng-click="goTo('adminProject')"><span class="glyphicon glyphicon-file" aria-hidden="true">
-                </span>{{project.Requirements}}
-              </td>
+              <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{project.State}}</td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{project.Requirements}}</td>
+              <td>{{project.Launch_Date}}</td>
               <td>{{project.End_Date}}</td>
             </tr>
           </tbody>
@@ -53,26 +49,22 @@
           <thead>
             <tr>
               <th>Proyecto</th>
-              <th>Aplicacion</th>
               <th>Cliente</th>
               <th>Desarrollador</th>
               <th>Estado</th>
               <th>Requerimientos</th>
+              <th>Fecha Lanzamiento</th>
               <th>Alquiler finaliza</th>
             </tr>
           </thead>
           <tbody>
             <tr ng-repeat="project in projects | filter: {State: 'In Progress'}">
-              <td ng-click="goTo('adminProject')">{{project.Name}}</td>
-              <td ng-click="goTo('appPage')">{{project.App}}</td>
-              <td ng-click="goTo('adminProject')">{{project.Client}}</td>
+              <td>{{project.Name}}</td>
+              <td>{{project.Client}}</td>
               <td>{{project.Developer}}</td>
-              <td ng-click="goTo('adminProject')"><span class="glyphicon glyphicon-time" aria-hidden="true">
-                </span>{{project.State}}
-              </td>
-              <td ng-click="goTo('adminProject')"><span class="glyphicon glyphicon-file" aria-hidden="true">
-                </span>{{project.Requirements}}
-              </td>
+              <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{project.State}}</td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{project.Requirements}}</td>
+              <td>{{project.Launch_date}}</td>
               <td>{{project.End_date}}</td>
             </tr>
           </tbody>
@@ -85,26 +77,22 @@
           <thead>
             <tr>
               <th>Proyecto</th>
-              <th>Aplicacion</th>
               <th>Cliente</th>
               <th>Desarrollador</th>
               <th>Estado</th>
               <th>Requerimientos</th>
+              <th>Fecha Lanzamiento</th>
               <th>Alquiler finaliza</th>
             </tr>
           </thead>
           <tbody>
             <tr ng-repeat="project in projects | filter: {State: 'Live!'}">
-              <td ng-click="goTo('adminProject')">{{project.Name}}</td>
-              <td ng-click="goTo('appPage')">{{project.App}}</td>
-              <td ng-click="goTo('adminProject')">{{project.Client}}</td>
+              <td>{{project.Name}}</td>
+              <td>{{project.Client}}</td>
               <td>{{project.Developer}}</td>
-              <td ng-click="goTo('adminProject')"><span class="glyphicon glyphicon-time" aria-hidden="true">
-                </span>{{project.State}}
-              </td>
-              <td ng-click="goTo('adminProject')"><span class="glyphicon glyphicon-file" aria-hidden="true">
-                </span>{{project.Requirements}}
-              </td>
+              <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{project.State}}</td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{project.Requirements}}</td>
+              <td>{{project.Launch_date}}</td>
               <td>{{project.End_date}}</td>
             </tr>
           </tbody>
@@ -117,26 +105,22 @@
           <thead>
             <tr>
               <th>Proyecto</th>
-              <th>Aplicacion</th>
               <th>Cliente</th>
               <th>Desarrollador</th>
               <th>Estado</th>
               <th>Requerimientos</th>
+              <th>Fecha Lanzamiento</th>
               <th>Alquiler finaliza</th>
             </tr>
           </thead>
           <tbody>
             <tr ng-repeat="project in projects | filter: {State: 'Finished'}">
-              <td ng-click="goTo('adminProject')">{{project.Name}}</td>
-              <td ng-click="goTo('appPage')">{{project.App}}</td>
-              <td ng-click="goTo('adminProject')">{{project.Client}}</td>
+              <td>{{project.Name}}</td>
+              <td>{{project.Client}}</td>
               <td>{{project.Developer}}</td>
-              <td ng-click="goTo('adminProject')"><span class="glyphicon glyphicon-time" aria-hidden="true">
-                </span>{{project.State}}
-              </td>
-              <td ng-click="goTo('adminProject')"><span class="glyphicon glyphicon-file" aria-hidden="true">
-                </span>{{project.Requirements}}
-              </td>
+              <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{project.State}}</td>
+              <td><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{project.Requirements}}</td>
+              <td>{{project.Launch_date}}</td>
               <td>{{project.End_date}}</td>
             </tr>
           </tbody>

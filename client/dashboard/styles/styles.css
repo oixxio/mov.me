@@ -33,7 +33,7 @@
 }
 
 .widget h5 {
-  margin-top: 15px;
+  padding-top: 10px;
 }
 
 .widget h2 {
@@ -50,5 +50,150 @@
      border-radius: 25px;
      margin-top: 15px;
      padding-top: 15px;
-     padding-bottom: 10px;"
+     padding-bottom: 10px;
    }
+
+/////////////////////Títulos
+
+.page-header {
+  padding-bottom: none;
+  margin: none;
+  border-bottom: none;
+}
+
+/////////////////////Estilos generales
+
+.h1, h1 {
+  font-size: 30px;
+}
+
+.label {
+  padding: 8px;
+}
+
+.label-info {
+  background-color: #337ab7;
+}
+
+.btn-group-xs>.btn, 
+.btn-xs {
+  padding: 5px 5px;
+}
+
+.btn-group-sm>.btn, 
+.btn-sm {
+  padding: 5px 15px;
+}
+
+.btn-default {
+  color: #737373;
+}
+
+.input-group {
+  margin-top: 25px;
+}
+
+span.glyphicon.glyphicon-time {
+  padding-right: 5px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #ececec;
+}
+
+.table-responsive {
+  min-height: 300px;
+}
+
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+  padding: 10px;
+  border-top: 0;
+  vertical-align: middle;
+}
+
+.table>thead>tr>th {
+  border-bottom: 0;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
+  color: #337ab7;
+  border: 0;
+  text-transform: uppercase;
+  border-bottom-color: transparent;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.nav-tabs>li>a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #808080;
+}
+
+.nav-tabs>li>a:hover {
+  border-color: transparent;
+}
+
+.nav>li>a:focus, 
+.nav>li>a:hover {    
+    background-color: transparent;
+}
+
+.panel.panel-default.widget h5 {
+  margin-bottom: 0;
+  margin-top: 5px; 
+}
+
+.panel.panel-default.widget h4 {
+  margin-bottom: 0;  
+}
+
+.panel.panel-default.widget h4 {
+  margin-bottom: 0;  
+}
+
+.container-fluid.ng-scope > div.row > div > h4 {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.table .table-striped > tr > td > p {
+  font-size: 13px;
+}
+
+a.thumbnail {
+  width: 48px;
+  height: 48px;
+}
+
+.ng-pristine.ng-valid.ng-scope.ng-submitted label {
+  margin-bottom: 25px;
+}
+
+.ng-pristine.ng-valid.ng-scope.ng-submitted .container-fluid.single-plan div.row {
+  border: solid 1px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

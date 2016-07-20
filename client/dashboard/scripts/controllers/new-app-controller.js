@@ -9,11 +9,11 @@
     	var iconsRef = storageRef.child('icons');
     	$scope.newApp = {}
     	$scope.newApp.clientFeatures = new Array({})
-    	$scope.newApp.iconPath = 'http://c.dryicons.com/images/icon_sets/blue_velvet/png/128x128/add.png'
-    	$scope.newApp.headerSmallPath = 'http://icons.iconarchive.com/icons/dryicons/aesthetica-2/128/image-add-icon.png'
-    	$scope.newApp.headerBigPath = 'http://icons.iconarchive.com/icons/dryicons/aesthetica-2/128/image-add-icon.png'
-    	$scope.newApp.screenshotPath = 'http://icons.iconarchive.com/icons/dryicons/aesthetica-2/128/image-add-icon.png'
-    	$scope.newApp.clientFeatures[0].img = 'http://icons.iconarchive.com/icons/dryicons/aesthetica-2/128/image-add-icon.png'
+    	$scope.newApp.iconPath = 'http://c.dryicons.com/images/upload.png'
+    	$scope.newApp.headerSmallPath = 'http://c.dryicons.com/images/add_icon.png'
+    	$scope.newApp.headerBigPath = 'http://c.dryicons.com/images/add_icon.png'
+    	$scope.newApp.screenshotPath = 'http://c.dryicons.com/images/add_icon.png'
+    	$scope.newApp.clientFeatures[0].img = 'http://c.dryicons.com/images/add_icon.png'
     	$scope.clientFeatures = [1]
     	
     	

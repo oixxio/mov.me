@@ -3,46 +3,22 @@
     angular.module('app.dashboard')
     .config(['$routeProvider',function($routeProvider) {
 		$routeProvider.
-	    when('/adminDashboard',{
+	    when('/',{
 			templateUrl: 'views/adminDashboard.html'
 		}).
-	    when('/adminUsers',{
+	    when('/usuarios',{
 			templateUrl: 'views/adminUsuarios.html'
 		}).
-	    when('/adminProjects',{
+	    when('/proyectos',{
 			templateUrl: 'views/adminProyectos.html'
 		}).
-		when('/adminProject',{
-			templateUrl: 'views/adminProject.html'
-		}).
-	    when('/adminBalance',{
+	    when('/balance',{
 			templateUrl: 'views/adminBalance.html'
 		}).
-	    when('/adminApps',{
+	    when('/aplicaciones',{
 			templateUrl: 'views/adminAplicaciones.html'
 		}).
-		when('/projectView',{
-			templateUrl: 'views/adminDashboard.html'
-		}).
-		when('/devDashboard',{
-			templateUrl: 'views/clientDashboard.html'
-		}).
-		when('/devProjects',{
-			templateUrl: 'views/clientApps.html'
-		}).
-		when('/devApps',{
-			templateUrl: 'views/adminAplicaciones.html'
-		}).		
-		when('/devApp',{
-			templateUrl: 'views/clientApp.html'
-		}).
-		when('/devProfile',{
-			templateUrl: 'views/clientProfile.html'
-		}).
-		 when('/devFinance',{
-			templateUrl: 'views/adminBalance.html'
-		}).
-		when('/clientDashboard',{
+		when('/client',{
 			templateUrl: 'views/clientDashboard.html'
 		}).
 		when('/clientApps',{
@@ -53,9 +29,6 @@
 		}).
 		when('/clientProfile',{
 			templateUrl: 'views/clientProfile.html'
-		}).
-		when('/appPage',{
-			templateUrl: 'views/appPage.html'
 		}).					
 		when('/newApp',{
 			templateUrl: 'views/newApp.html'

@@ -13,8 +13,8 @@
         db.setUsers = function (data) { db.users = data }
         db.getUsers = function () { return db.users }
     	//this function overwrites an entry if alredy exists or creates an entry if not
-        db.post = function (path,index,obj) { return firebase.database().ref(path).push(obj)}
-        
+        db.post = function (path,index,obj) { return firebase.database().ref(path).push(obj) }
+    	
     	return db;
     }]);
 

@@ -20,9 +20,10 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th>Nombre de la App</th>
-              <th>Desarrollador</th>
-              <th>Estado</th>
+              <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
               <th></th>
               <th></th>
               <th></th>
@@ -34,21 +35,22 @@
           </thead>
           <tbody>
             <tr ng-repeat="app in applications | filter:{State: 'Postulated'}">
-              <td ng-click="goTo('appPage')">{{app.Name}}</td>
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
               <td>{{app.Developer}}</td>
-              <td ng-click="goTo('appPage')">{{app.State}}</td>
+              <td>{{app.Description}}</td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
-              <td><span></span></td>
-              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
             </tr>
           </tbody>
         </table>
@@ -59,9 +61,10 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th>Nombre de la App</th>
-              <th>Desarrollador</th>
-              <th>Estado</th>
+               <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
               <th></th>
               <th></th>
               <th></th>
@@ -73,21 +76,22 @@
           </thead>
           <tbody>
             <tr ng-repeat="app in applications | filter:{State: 'Approved'}">
-              <td ng-click="goTo('appPage')">{{app.Name}}</td>
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
               <td>{{app.Developer}}</td>
-              <td ng-click="goTo('appPage')">{{app.State}}</td>
+              <td>{{app.Description}}</td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
-              <td><span></span></td>
-              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
             </tr>
           </tbody>
         </table>
@@ -98,9 +102,10 @@
         <table class="table table-striped">
           <thead>
             <tr>
-               <th>Nombre de la App</th>
-              <th>Desarrollador</th>
-              <th>Estado</th>
+               <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
               <th></th>
               <th></th>
               <th></th>
@@ -112,21 +117,22 @@
           </thead>
           <tbody>
             <tr ng-repeat="app in applications | filter:{State: 'Published'}">
-              <td ng-click="goTo('appPage')">{{app.Name}}</td>
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
               <td>{{app.Developer}}</td>
-              <td ng-click="goTo('appPage')">{{app.State}}</td>
+              <td>{{app.Description}}</td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
-              <td><span></span></td>
-              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
             </tr>
           </tbody>
         </table>
@@ -137,9 +143,10 @@
         <table class="table table-striped">
           <thead>
             <tr>
-               <th>Nombre de la App</th>
-              <th>Desarrollador</th>
-              <th>Estado</th>
+               <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
               <th></th>
               <th></th>
               <th></th>
@@ -151,21 +158,22 @@
           </thead>
           <tbody>
             <tr ng-repeat="app in applications | filter:{State: 'Draft'}">
-              <td ng-click="goTo('appPage')">{{app.Name}}</td>
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
               <td>{{app.Developer}}</td>
-              <td ng-click="goTo('appPage')">{{app.State}}</td>
+              <td>{{app.Description}}</td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
-              <td><span></span></td>
-              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
             </tr>
           </tbody>
         </table>
@@ -176,9 +184,10 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th>Nombre de la App</th>
-              <th>Desarrollador</th>
-              <th>Estado</th>
+               <th>ID</th>
+              <th>Fecha recepción</th>
+              <th>Mail Desarrollador</th>
+              <th>Descripción</th>
               <th></th>
               <th></th>
               <th></th>
@@ -190,21 +199,22 @@
           </thead>
           <tbody>
             <tr ng-repeat="app in applications | filter:{State: 'Withdrawn'}">
-              <td ng-click="goTo('appPage')">{{app.Name}}</td>
+              <td>{{app.Name}}</td>
+              <td>{{app.Register_Date}}</td>
               <td>{{app.Developer}}</td>
-              <td ng-click="goTo('appPage')">{{app.State}}</td>
+              <td>{{app.Description}}</td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
-              <td><span></span></td>
-              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
               <td><span></span></td>
               <td><span></span></td>
-              <td></td>
-              <td></td>
+              <td><a href=""><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></td>
+              <td><span></span></td>
+              <td><span></span></td>
+              <td><a href=""><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+              <td><a href=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
             </tr>
           </tbody>
         </table>
